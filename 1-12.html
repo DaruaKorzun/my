@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Данные педагога</title>
+</head>
+<body>
+
+<script>
+    // Инициализация переменных
+    let Firstname = "Виктор";
+    let Lastname = "Карамзин";
+    let Patronymic = "Геннадьевич";
+    let Position = "Преподаватель специальных дисциплин";
+    let EducationLevel = "Высшее";
+    let Category = "Первая";
+    
+    // Образование как массив
+    let EducationInstitutions = [
+        "Московский государственный институт электронной техники (технический университет)",
+        "Санкт-Петербургский государственный университет (СПбГУ)"
+    ];
+    
+    // Дисциплины как массив
+    let Subjects = [
+        "Информатика",
+        "Основы программирования",
+        "Инженерная графика"
+    ];
+
+    // Создание объекта
+    let teacher = {
+        fullName: ${lastName} ${firstName} ${patronymic}
+        position: position,
+        educationLevel: educationLevel,
+        category: category,
+        educationInstitutions: educationInstitutions,
+        subjects: subjects;
+        
+    };
+
+    // Вывод данных объекта в браузер
+    document.write(teacher.fullName + "<br>");
+    document.write("Должность: " + teacher.position + "<br>");
+    document.write("Уровень образования: " + teacher.educationLevel + "<br>");
+    document.write("Категория: " + teacher.category + "<br>");
+    
+    // Вывод образования
+    document.write("Образование: <br>");
+    for (let institution of teacher.educationInstitutions) {
+        document.write("- " + institution + "<br>");
+    }
+
+    // Вывод дисциплин в виде HTML списка
+    document.write("Дисциплины:<br>");
+    document.write("<ul>");
+    for (let subject of teacher.subjects) {
+        document.write("<li>" + subject + "</li>");
+    }
+    document.write("</ul>");
+</script>
+
+</body>
+</html>

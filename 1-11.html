@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Персональные данные педагога</title>
+<script>
+// Инициализация объекта с данными о педагоге
+const person = {
+surname: "Карамзин",
+name: "Виктор",
+patronymic: "Геннадьевич",
+occupation: "Преподаватель специальных дисциплин",
+educationLevel: "Высшее",
+category: "Первая",
+education: "Московский государственный институт электронной техники (технический университет)",
+discipline: "Информатика",
+note: "HONOR"
+};
+
+// Формирование строки для вывода
+let line =
+<h2>${person.surname} ${person.name} ${person.patronymic}</h2>;
+<p><i>Должность:</i> ${person.occupation}</p>;
+<p><i>Уровень образования:</i> ${person.educationLevel}</p>;
+<p><i>Категория:</i> ${person.category}</p>;
+<p><i>Образование:</i> ${person.education}</p>;
+<p><i>Дисциплина:</i> ${person.discipline}</p>;
+<p><i>Примечание:</i> ${person.note}</p>;
+</script>
+</head>
+<body>
+<div class="content">
+<script>
+// Вывод данных о педагоге в браузер
+document.write(line);
+</script>
+</div>
+</body>
+</html>

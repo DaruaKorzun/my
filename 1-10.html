@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Персональные данные педагога</title>
+<script>
+// Инициализация объекта с данными о педагоге
+var teacher = {
+name: "Карамзин Виктор Геннадьевич",
+position: "Преподаватель специальных дисциплин",
+educationLevel: "Высшее",
+category: "Первая",
+education: "Московский государственный институт электронной техники (технический университет)",
+discipline: "Информатика",
+note: "HONOR"
+};
+</script>
+</head>
+<body>
+<div class="content">
+<script>
+// Вывод данных о педагоге из объекта
+document.write(teacher.name + "<br>");
+document.write("Должность: " + teacher.position + "<br>");
+document.write("Уровень образования: " + teacher.educationLevel + "<br>");
+document.write("Категория: " + teacher.category + "<br>");
+document.write("Образование: " + teacher.education + "<br>");
+document.write("Дисциплина: " + teacher.discipline + "<br>");
+document.write("Примечание: " + teacher.note + "<br>");
+</script>
+</div>
+</body>
+</html>
